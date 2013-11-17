@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": ["http://*.wikipedia.org/*"],
-      "js": ["background.js"]
+      "js": ["background.js"],
+      "css" : ["newstyle.css"]
     }
   ],
     "background": {
