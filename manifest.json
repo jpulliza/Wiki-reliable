@@ -5,11 +5,16 @@
   "description": "This extension analyzes and displays reliability indexes for a given Wikipedia article to the user.",
   "version": "1.0",
 
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*",
+      "https://*.wikipedia.org/*"],
+      "js": ["background.js"]
+    }
+  ],
   "permissions": [
-    "https://secure.flickr.com/"
+    "https://secure.flickr.com/",
+    "https://*.wikipedia.org/*",
+    "https://*.wikipedia.org/*"
   ]
 }
