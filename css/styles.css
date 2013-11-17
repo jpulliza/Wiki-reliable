@@ -19,6 +19,20 @@
   float: none;
   display: table-cell;
 }
+table {
+  max-width: 100%;
+  background-color: transparent;
+}
+th {}
+table col[class*="col-"] {
+  float: none;
+  display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
 .table > tfoot > tr > td.active,
